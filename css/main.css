@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body {
+    color: #111;
+    background-color: #FFF;
+    font: 16px Georgia, Palatino, serif;
+    background-color: #F4FAD2;
+}
+
+a {
+    color: #FF4242;
+    text-decoration: none;
+}
+
+p {
+    color: #333;
+    line-height: 1.4em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+
+div.container {
+    margin: 0 auto;
+    width: 760px;
+    min-height: 100%;
+    background-color: white;
+}
+
+div.inner-container {
+    padding: 1em;
+}
+
+a.home {
+    display: block;
+    margin: 0.3em 0;
+}
+
+/* ABOUT SECTION */
+div.about {
+    width: 100%;
+    padding: 10px;
+    background-color: #E1EDB9;
+    position: relative;
+    margin-bottom: 1em;
+}
+
+div.about p {
+    padding: 1em 0;
+}
+
+.about:before, .about:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 9999px;
+    background-color: #E1EDB9;
+}
+
+.about:before {
+    right: 100%;
+}
+
+.about:after {
+    left: 100%;
+}
+
+/* FOOTER */
+div.footer {
+    position: fixed;
+    bottom: 0;
+    padding: 1em;
+}
+
+/* POSTS */
+.post {
+    margin-bottom: 2em;
+}
+
+.post a {
+    font-size: 2em;
+    color: #333;
+}
+
+.post .date {
+    display: block;
+    color: #666;
+}
+
+.post p {
+    margin-top: 0.5em;
+    font-style: italic;
+}
+
+.single-post .meta {
+    display: block;
+    text-align: center;
+    color: #666;
+}
+
+.single-post p {
+    margin-top: 1em;
+}

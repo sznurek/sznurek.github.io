@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="/css/syntax.css">
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="inner-container">
+                <a href="{{ site.url }}" class="home">Home</a>
+                <div class="about fullwidth">
+                    <p>
+                    Hi! My name is <strong> Łukasz Dąbek</strong> (aka <strong>sznurek</strong>).
+                    I am computer science, programming and math enthusiast and I would
+                    like to talk with you! Just drop me an email:
+                    <a href="mailto:sznurek@gmail.com">sznurek@gmail.com</a>.
+                    </p>
+                </div>
+
+                <div class="content">
+                    {{ content }}
+                </div>
+
+                <div class="footer">
+                    Website by Łukasz Dąbek (aka sznurek). Contact: <a href="mailto:sznurek@gmail.com">sznurek@gmail.com</a>.
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
