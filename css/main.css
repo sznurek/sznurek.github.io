@@ -4,7 +4,6 @@
 }
 
 html, body {
-    overflow-x: hidden;
     height: 100%;
 }
 
@@ -32,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 
 div.container {
     margin: 0 auto;
-    width: 760px;
+    max-width: 760px;
     min-height: 100%;
     background-color: white;
 }
@@ -49,37 +48,12 @@ a.home {
 /* ABOUT SECTION */
 div.about {
     width: 100%;
-    padding: 10px;
     background-color: #E1EDB9;
     position: relative;
     margin-bottom: 1em;
 }
 
 div.about p {
-    padding: 1em 0;
-}
-
-.about:before, .about:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 9999px;
-    background-color: #E1EDB9;
-}
-
-.about:before {
-    right: 100%;
-}
-
-.about:after {
-    left: 100%;
-}
-
-/* FOOTER */
-div.footer {
-    position: fixed;
-    bottom: 0;
     padding: 1em;
 }
 
