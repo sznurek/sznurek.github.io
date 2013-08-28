@@ -64,11 +64,14 @@ div.about p {
 
 .post a {
     font-size: 2em;
+    display: block;
+    text-align: center;
     color: #333;
 }
 
 .post .date {
     display: block;
+    text-align: center;
     color: #666;
 }
 
@@ -86,3 +89,9 @@ div.about p {
 .single-post p {
     margin-top: 1em;
 }
+
+.single-post h1 {
+    font-weight: normal;
+    font-size: 2em;
+}
+
