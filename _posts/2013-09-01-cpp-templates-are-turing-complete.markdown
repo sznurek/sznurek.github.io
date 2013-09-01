@@ -236,7 +236,7 @@ template <template <typename x> class f> struct Map<f, Nil> {
 
 template <template <typename x> class f, typename x, typename xs>
 struct Map<f, Cons<x,xs> > {
-    typedef typename Cons<typename f<x>::result, Map<f, xs>::result> result;
+    typedef typename Cons<typename f<x>::result, typename Map<f, xs>::result> result;
 };
 {% endhighlight %}
 
