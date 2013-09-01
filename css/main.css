@@ -90,8 +90,25 @@ div.about p {
     margin-top: 1em;
 }
 
+.single-post h2 {
+    text-align: left;
+    font-weight: normal;
+    margin: 0;
+    margin-top: 1em;
+    margin-bottom: -0.5em;
+}
+
 .single-post h1 {
     font-weight: normal;
     font-size: 2em;
 }
 
+pre {
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+code {
+    font-family: 'Droid Sans Mono', 'Source Code Pro', monospace;
+    font-size: 0.8em;
+}
