@@ -32,7 +32,7 @@ typedef Cons<Elem, Cons<Elem, Cons<Elem, Nil> > > TheList;
 
 So, if data structures are generic types how can we encode functions? Basic idea
 is to have one `struct` per function and use template specialization
-for pattern matching. Results of computation ar stored by `typedef` it into `struct`.
+for pattern matching. Results of computation are stored by `typedef` it into `struct`.
 Check out `Head` and `Tail` functions:
 
 {% highlight cpp %}
@@ -144,7 +144,7 @@ int main() {
 {% endhighlight %}
 
 ## Branching
-Before we will checkout higher-order function (yes, we will!) we need to implement `if`
+Before we will checkout higher order functions (yes, we will!) we need to implement `if`
 instruction. After that we will be able to get maximum number from list of natural numbers.
 
 Just like all previous function definitions, `If` is also defined by pattern matching:
@@ -217,7 +217,7 @@ apply :: (a -> b) -> a -> b
 apply f x = f x
 {% endhighlight %}
 
-And in C++ templates:
+In C++ templates:
 
 {% highlight cpp %}
 template <template <typename x> class f, typename y> struct Apply {
@@ -236,7 +236,7 @@ template <template <typename x> class f> struct Map<f, Nil> {
 
 template <template <typename x> class f, typename x, typename xs>
 struct Map<f, Cons<x,xs> > {
-    typedef typename Cons<f<x>::result, Map<f, xs>::result> result;
+    typedef typename Cons<typename f<x>::result, Map<f, xs>::result> result;
 };
 {% endhighlight %}
 
