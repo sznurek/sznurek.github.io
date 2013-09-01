@@ -69,6 +69,12 @@ div.about p {
     color: #333;
 }
 
+.post p a {
+    color: #FF4242;
+    display: inline;
+    font-size: 1em;
+}
+
 .post .date {
     display: block;
     text-align: center;
