@@ -23,7 +23,7 @@ template <typename x, typename xs> struct Cons;
 {% endhighlight %}
 
 Values in template-based programming language will be types in C++. For example,
-we can declare list with three element:
+we can declare a list with three elements:
 
 {% highlight cpp %}
 struct Elem;
