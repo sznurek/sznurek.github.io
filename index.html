@@ -5,7 +5,7 @@ title: sznurek home
 
 {% for post in site.posts %}
   <div class="post">
-      <a href="{{ post.url }}">&raquo;{{ post.title }}</a>
+      <a href="{{ post.url }}">{{ post.title }}</a>
       <span class="date">{{ post.date | date_to_string }}</span>
       <p>{{ post.excerpt }}</p>
   </div>
