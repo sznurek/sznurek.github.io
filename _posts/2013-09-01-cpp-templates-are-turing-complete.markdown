@@ -12,8 +12,6 @@ linked Wikipedia article). This will be faster than my naive definition of
 natural numbers below. But it is more fun to not use cheats and implement
 everything from scratch.
 
-## Basics: LISP-style lists
-
 Let's start with something simple: single linked lists in the style of LISP and
 some basic operations on them. We need to declare our data type:
 
@@ -78,8 +76,6 @@ append (x:xs) ys = x : append xs ys
 
 This is the same idea as the code above (if you omit syntax differences).
 
-## How to get results of template programs?
-
 So far we could only check that our programs compile. To get something on
 the screen we can for example create run-time values from compile-time
 types ("reify" them, if you like this word). The following example will
@@ -143,7 +139,6 @@ int main() {
 };
 {% endhighlight %}
 
-## Branching
 Before we will checkout higher order functions (yes, we will!) we need to implement `if`
 instruction. After that we will be able to get maximum number from list of natural numbers.
 
@@ -201,8 +196,6 @@ template <typename n, typename xs> struct Maximum<Cons<n, xs> > {
 };
 {% endhighlight %}
 
-## Higher order functions
-
 The last ingredient of template-based programming language will be higher
 order functions "support" and obligatory `map` function on lists.
 
@@ -239,8 +232,6 @@ struct Map<f, Cons<x,xs> > {
     typedef typename Cons<typename f<x>::result, typename Map<f, xs>::result> result;
 };
 {% endhighlight %}
-
-## What's now?
 
 You can continue this awesome fun: write compile-time prime sieve,
 implement simple functional language compiled to C++ templates,
